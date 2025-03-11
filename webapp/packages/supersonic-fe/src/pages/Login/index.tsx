@@ -90,23 +90,23 @@ const LoginPage: React.FC = () => {
               <div className={styles.loginMain}>
                 <h3 className={styles.title}>
                   <Space>
-                    <S2Icon
+                    {/* <S2Icon
                       icon={ICON.iconlogobiaoshi}
                       size={30}
                       color="#296DF3"
                       style={{ display: 'inline-block', marginTop: 8 }}
-                    />
-                    <div>SuperSonic</div>
+                    /> */}
+                    <div>Chat BI</div>
                   </Space>
                 </h3>
                 <Item name="name" rules={[{ required: true }]} label="">
-                  <Input size="large" placeholder="用户名: admin" prefix={<UserOutlined />} />
+                  <Input size="large" placeholder="" prefix={<UserOutlined />} />
                 </Item>
                 <Item name="password" rules={[{ required: true }]} label="">
                   <Input
                     size="large"
                     type="password"
-                    placeholder="密码: 123456"
+                    placeholder=""
                     onPressEnter={handleLogin}
                     prefix={<LockOutlined />}
                   />
