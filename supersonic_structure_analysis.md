@@ -137,29 +137,29 @@ classDiagram
 #### 实体关系图
 ```mermaid
 erDiagram
-    USER ||--o{ USER_TOKEN : has
-    USER ||--o{ ORGANIZATION : belongs to
-    ORGANIZATION ||--o{ ORGANIZATION : parent-child
+    USER ||--o{ USER_TOKEN : "has"
+    ORGANIZATION ||--o{ USER : "has"
+    ORGANIZATION ||--o{ ORGANIZATION : "parent-child"
     
     USER {
+        string id
         string name
         string password
-        int isAdmin
+        boolean isAdmin
     }
     
     USER_TOKEN {
         int id
-        string name
-        string userName
         string token
         long expireTime
         Date createDate
         Date expireDate
+        string userId
     }
     
     ORGANIZATION {
         string id
-        string parentId
+        string parentOrganizationId
         string name
         string fullName
         boolean isRoot
