@@ -8,3 +8,4 @@ export S2_DB_PORT=3306
 export S2_DB_USER=root
 export S2_DB_PASSWORD=Root@123
 export S2_DB_DATABASE=supersonic
+
